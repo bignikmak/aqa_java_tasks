@@ -6,24 +6,15 @@ System.out.println, System.out.print можно использовать тол�
 для этого нужно воспользоваться циклом for
 */
 
+import com.sun.media.sound.SoftAudioPusher;
+
 public class Task2 {
 
     public static void main(String[] args) {
-        String s = "Vladimir";
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
+        String s = "Nick";
+        for (int i = 0; i < 5; i++) {
+            System.out.print(s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " ");
+            System.out.println(s);
+        }
     }
 }
