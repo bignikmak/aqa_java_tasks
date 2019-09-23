@@ -12,9 +12,13 @@ public class Task4 {
         String s = "Nick";
         int i = 0;
         do {
-            System.out.print(s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " ");
-            System.out.println(s);
-            i++;
+            int j = 0;
+                do {
+                    System.out.print(s + " ");
+                    j++;
+                } while (j < 9);
+                System.out.println(s);
+                i++;
         } while (i < 5);
     }
 }
