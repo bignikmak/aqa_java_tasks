@@ -9,7 +9,7 @@ public class Task1 {
         int m3;
         int a = 10;
         int b = 7;
-        int c = 15;
+        int c = 5;
         m3 = min(a, b, c);
         System.out.println(m3);
     }
