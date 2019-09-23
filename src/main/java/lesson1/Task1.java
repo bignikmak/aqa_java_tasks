@@ -6,16 +6,20 @@ public class Task1 {
     */
 
     public static void main(String[] args) {
+        int m3;
+        int a = 10;
+        int b = 7;
+        int c = 15;
+        m3 = min(a, b, c);
+        System.out.println(m3);
     }
 
         public static int min(int a, int b, int c) {
-            int min;
             if ((a < b) && (a < c))
-                min = a;
+                return a;
             else if ((b < a) && (b < c))
-                min = b;
+                return b;
             else
-                min = c;
-            return min;
+                return c;
         }
 }
