@@ -1,9 +1,6 @@
 package lesson1;
 
 public class Task1 {
-    /* Минимум трех чисел
-    Написать функцию, которая вычисляет минимум из трёх чисел.
-    */
 
     public static void main(String[] args) {
         int m3;
