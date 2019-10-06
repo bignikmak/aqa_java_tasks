@@ -1,12 +1,12 @@
 package lesson1;
 
 public class Task5 {
-    public static void main(String[] args) {
-        System.out.println(reverse());
+    public Task5() {
     }
-   public static String reverse () {
+
+   public String reverse () {
        String str = "Hello world!!!";
-       String res = " ";
+       String res = "";
        int L = str.length();
        for (int i = 0; i < L; i++) {
            res = str.charAt(i) + res;

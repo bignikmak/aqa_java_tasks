@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+    <suite name="lesson1">
+        <test name="FirstTest">
+            <classes>
+                <class name="test.lesson1.Task5Test"/>
+            </classes>
+        </test>
+        <test name="SecondTest">
+            <groups>
+                <dependencies>
+                    <group name="Second" depends-on="First">
+
+                    </group>
+                </dependencies>
+            </groups>
+        </test>
+    </suite>
