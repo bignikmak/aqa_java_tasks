@@ -1,31 +1,16 @@
-package lesson1;
+package main.java.lesson1;
 
 public class Task2 {
-    public Task2() {
-    }
 
-    public String nameDisplay() {
-         return "Nick Nick Nick Nick Nick Nick Nick Nick Nick Nick \n" +
-                 "Nick Nick Nick Nick Nick Nick Nick Nick Nick Nick \n" +
-                 "Nick Nick Nick Nick Nick Nick Nick Nick Nick Nick \n" +
-                 "Nick Nick Nick Nick Nick Nick Nick Nick Nick Nick \n";
+    public static String nDis() {
+        String name = "Nick";
+        String str = "";
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 10; j++) {
+                str += name + " ";
+            }
+            str += "\n";
+        }
+        return str;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*for (int i = 0; i < 2; i++) {
-            for (int j = 1; j < 5; j++) {
-                System.out.print("Nick" + " ");
-            }
-            System.out.print("Nick\n");
-        }*/
