@@ -20,5 +20,67 @@ package lesson2;
  */
 
 public class Task1 {
+    private String name;
+    private int age;
+    public String ageGroup;
+
+    public Task1(String name, int age, String ageGroup) {
+        this.name = name;
+        this.age = age;
+        this.ageGroup = ageGroup;
+    }
+
+    private String getName() {
+        return name;
+    }
+
+    private String SetName(String name) {
+        if (name.matches(" ")) {
+            System.out.println("Space can't be used");
+        }
+        String capitalname = name.substring(0, 1).toUpperCase() + name.substring(1);
+        return this.name = capitalname;
+
+        for (int name.length < 3, name.length() > 50) {
+            System.out.println("Name can't be this long");
+        }
+
+    }
+
+    private int getAge(int age) {
+        return age;
+    }
+
+    private void setAge(int age) {
+        if (age < 0) {
+            System.out.println("Age should be more than 0");
+        } else {
+            this.age = age;
+        }
+        if (age > 100) {
+            System.out.println("Age should be less than 100");
+        } else {
+            this.age = age;
+        }
+    }
+
+    public String getAgeGroup(String ageGroup) {
+        return ageGroup;
+    }
+
+    private String SetageGroup(String ageGroup) {
+        if (age < 15) {
+            return ageGroup = "child";
+        }
+        if (age > 15 age < 25) {
+            return ageGroup = "student";
+        }
+        if (age > 26 && age < 65) {
+            return ageGroup = "worker";
+        }
+        if (age > 66) {
+            return ageGroup = "pensioner";
+        }
+    }
 
 }
